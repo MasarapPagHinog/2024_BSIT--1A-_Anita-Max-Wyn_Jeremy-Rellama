@@ -1,0 +1,23 @@
+body{
+    background-color: #040403;
+    width: 100vw;
+    height: 100vh;
+}
+
+@font-face {
+    font-family:akira expanded ;
+    src: url(font/Akira\ Expanded\ Demo.otf);
+}
+@font-face {
+    font-family: gotham;
+    src: url(font/Gotham-Light.otf);
+}
+@font-face {
+    font-family: gotham medium;
+    src: url(font/GothamMedium.ttf);
+}
+
+h1 {
+    color: #BC1823;
+    font-family: akira expanded;
+}

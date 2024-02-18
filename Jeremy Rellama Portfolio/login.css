@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    background-color: #040403;
+}
+div{
+width: 40vw;
+height: 50vh;
+background-color: #BC1823;
+}
+
+.display-flex{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
