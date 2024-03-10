@@ -1,182 +1,66 @@
+:root{
+  --bg-black: #0F0F0F !important;
+  --bg-darkblue: #070F2B !important;
+  --text-orange: #FC6736!important;
+  --text-galaxyblue: #1B1A55 !important;
+  --text-green: #005B41 !important;
+  --bg-white: #F6F5F5 !important;
+  }
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
 body{
-    background-color: #040403;
-    height: 100vh;
-    width: 90vw;
-    margin: 50px;
-    height: 100vh;
-    color: #D9D9D9;
-    margin-bottom: 0%;
-}
-@font-face {
-    font-family:akira expanded ;
-    src: url(font/Akira\ Expanded\ Demo.otf);
-}
-@font-face {
-    font-family: gotham;
-    src: url(font/Gotham-Light.otf);
-}
-@font-face {
-    font-family: gotham medium;
-    src: url(font/GothamMedium.ttf);
-}
-
-.img{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-}
-
-ul{
-    font-family: gotham;
-    color: #A29797;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 5px;
-    list-style-type: none;
-    background-color: none;
-    position: sticky;
-}
-li{
-    text-align: end;
-    font-size: 18px;
-    line-height: 1.3;
-    margin-right: 40px;
-}
-li:hover:not(.active){
-    color: white;
-    cursor: pointer;
-}
-.active{
-    color: white;
-}
-
+    padding-top: 56px;
+    font-family: Hauora;
+    background-color: var(--bg-white);
+    min-height: calc(100vh - 40px);
+    color: var(--bg-black);
+    }
 
 .container{
-    background-color: #040403;
-    height: 100vh;
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
 }
 
-.heading{
-    text-align: center;
-    font-family: akira expanded;
-    letter-spacing: 3px;
-    font-size: 45px;
-    color: #BC1823;
-
-}
-.lorem{
-    position: relative;
-    top: -50px;
-    right: -350px;
-    width: fit-content;
-    text-align: start;
-    font-family: gotham;
-    letter-spacing: 2px;
-    line-height: 28px;
-    font-size: 25px;
+.content1{
+  height: px;
+  /* border: 1px solid #FC6736 ; */
+  justify-content: space-between;
 }
 
-.container2{
-height: 90vh;
-width: 90vw;
-background-color: #040403;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-line-height: 15px;
-letter-spacing: 3px;
-}
-
-a{
-    font-family: akira expanded;
-    font-size: 38px;
-    width:  auto;
-    text-decoration: none;
-}
-
- a h1 {
-    padding: 0.2em 0.4em;
-}
-
-a {
-    box-shadow: inset 0 0 0 0 #BC1823;
-    color: #BC1823;
-    margin: 0 -.25rem;
-    padding: 0 .25rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  }
-
-a:hover {
-    box-shadow: inset 1450px 0 0 0 #BC1823;
-    color: #1e1c1c;
-  }
-
-
-
-.container3{
-    background-color: #040403;
-    height: 110vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 100px;
-}
-.about{
-font-family: gotham;
-font-size: 25px;
-letter-spacing: 3px;
-}
-
-.content3{
-    font-family: gotham medium;
-    font-size: 55px;
-    letter-spacing: 3px;
-    line-height: 1.3;
-}
-span{
-    color: #BC1823;
-}
-
-.container4{
-    height: 50vh;
-    background-color: #040403;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.motto{
-    font-family: gotham;
-    font-size: 25px;
-    letter-spacing: 3px;
-    align-self: center;
-}
-.content4{
-    font-family: gotham medium;
-    font-size: 60px;
-    text-align: center;
-    letter-spacing: 3px;
-    line-height: 1.3;
-}
-
-.container5{
-    height: 100vh;
-    background-color: #040403;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    top: -80px;
+.content2{
+  /* border: 1px solid #FC6736 ; */
 
 }
 
-.content5{
-    font-family: gotham medium;
-    font-size: 40px;
-    letter-spacing: 1.5px;
-    line-height: 1.2;
+img {
+  --s: 20px;  /* size of the frame */
+  --b: 2px;   /* border thickness */
+  --w: 400px; /* width of the image */
+  --c: #FC6736;
+  
+  width: var(--w);
+  aspect-ratio:1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+  background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+  outline: calc(var(--w)/2) solid #0009;
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
+}
+img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
 }

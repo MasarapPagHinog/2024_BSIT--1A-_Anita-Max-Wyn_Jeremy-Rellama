@@ -1,60 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>    
-    <title>Jem</title>
+
+<head>
+<title>Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <link rel="shortcut icon" type="x-icon" href="JEM.png">
-
+    
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-        <img class="img" src="JEM.png" >
-        <ul> 
-            <li class="active">HOME</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
-        </ul>
-    </header>
 
-    <main>
-        <div class="container">
-            <div class="heading"><h1>MAKING A BAD <br> WEBSITE 
-                <br>RIGHT NOW</h1></div>
-                <div class="lorem"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Nulla non tortor ut nunc fringilla semper eu eget orci. 
-                    Nam <br>hendrerit, ex at iaculis pretium, felis orci sollicitudin.</h5></div>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top text-uppercase" style="margin: 10px; font-size: 12px; letter-spacing: 2px;">
+
+      <!-- <div class="container justify-content-center">
+        <a class="navbar-brand text-dark res-nav" href="#">Logo</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-dark res-nav" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark res-nav" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark res-nav" href="work.html">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark res-nav" href="#">Contacts</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+</header>
+<main>
 
-        <div class="container2">
-            <a href=""><h1>DESIGN</h1></a>
-            <a href=""><h1>LAYOUT</h1></a>
-            <a href=""><h1>WEB DEV</h1></a>
-            <a href=""><h1>PROGRAMMING</h1></a>
-        </div>
-        
-        <div class="container3">
-            <h1 class="about">ABOUT ME</h1>
-            <div class="content3">I am a <span>student</span> at Bicol University Polangui studying Bachelor of Science in Information Technology.</div>
-        </div>
+  <div class="min-h-90 min-w-90 container1 d-flex flex-col align-items-center ">
+    <div class="container row mx-auto" style="width: 100%;">
+      <div class="grid grid-cols-2">
+        <div>
+          <h1 class="header text-end mr-8" style=" margin-right: -2rem; margin-bottom: -3rem;">JEREMY</h1>
+        </div> 
+        <div></div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div></div>
+        <div>
+          <h1 class="header text-uppercase rellama-res" style=" margin-left: -9.5rem;">Rellama</h1>
+        </div> 
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="container4">
-            <h1 class="motto">MY MOTTO</h1>
-            <div class="content4">WHEN LIFE GIVES YOU <br> LEMON MAKE A <br> <span>LEMONADE</span></div>
-            <h1 class="motto">-Jeremy Rellama</h1>
-        </div>
+  d-flex flex-col justify-content-start -->
+  <div class="container2 min-h-90 min-w-90  ms-10;">
+    <div class="row">
+      <div class=" col-7" style=" text-align: justify; width: 45%; margin-right: 5%; margin-left: 65px;">
+        <h1 class="cont2-res" style="color: var(--text-orange);">About Me</h1>
+        <p class="res">I am a student at Bicol University Polangui studying Bachelor of Science in Information Technology.
+          In the bustling halls of Bicol University Polangui, nestled amidst the verdant landscapes of Albay, stands a determined student, diligently pursuing a Bachelor of Science in Information Technology (BSIT). With a fervent passion for technology and a hunger for knowledge, this student navigates through the complexities of algorithms, programming languages, and networking concepts with unwavering dedication. Their commitment to excellence is evident in every line of code written and every problem solved, as they strive to harness the power of information technology to shape a brighter future. <br> <br>
+          In the classrooms and labs of Bicol University Polangui, they are not just a student but a beacon of inspiration, embodying the spirit of innovation and resilience that defines the university's ethos. With each passing day, they inch closer to their aspirations, ready to make their mark in the ever-evolving world of IT, fueled by the guidance of their professors and the support of their peers. As they walk the corridors of learning, they carry with them the promise of limitless possibilities and the determination to conquer new frontiers in the realm of technology.
+        </p>
+    </div>
+    <div class="p-2 col-5 res-img">
+      <img src="jeremypic.jpg" class=" rounded img-h img-res img-size" alt="">
+    </div>
+  </div>  
+  </div>
 
-        <div class="container5">
-            <div class="content5"><p>INSTAGRAM</p>
-            <p>TELEGRAM</p>
-            <p>FACEBOOK</p>
-        </div>
-        </div>
-    </main>
-
-    <footer>
-
-
-    </footer>
+  <script defer src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+</main>
 </body>
-</html>
