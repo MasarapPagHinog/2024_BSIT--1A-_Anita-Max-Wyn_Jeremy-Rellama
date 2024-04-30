@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
 <title>Portfolio</title>
     <meta charset="UTF-8">
@@ -8,50 +7,42 @@
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top text-uppercase" style="margin: 10px; font-size: 12px; letter-spacing: 2px;">
-
-      <!-- <div class="container justify-content-center">
-        <a class="navbar-brand text-dark res-nav" href="#">Logo</a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active text-dark res-nav" aria-current="page" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark res-nav" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark res-nav" href="work.html">Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark res-nav" href="#">Contacts</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <img class="logoheader" src="img/logo.png" alt="logo">
+    <nav>
+      <ul class= "navbar" id="aboutList">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <!-- <input class="search" type="searchbar" placeholder="Search" name="searchbar"> -->
+      </ul>     
     </nav>
 </header>
 <main>
 
+<!-- page1 -->
+<section class="Home" id="home">
   <div class="min-h-90 min-w-90 container1 d-flex flex-col align-items-center ">
     <div class="container row mx-auto" style="width: 100%;">
       <div class="grid grid-cols-2">
         <div>
-          <h1 class="header text-end mr-8" style=" margin-right: -2rem; margin-bottom: -3rem;">JEREMY</h1>
+          <h1 class="header text-end mr-8" style=" margin-right: -2rem; margin-bottom: -3rem;">PERSIST</h1>
         </div> 
         <div></div>
       </div>
       <div class="grid grid-cols-2">
         <div></div>
         <div>
-          <h1 class="header text-uppercase rellama-res" style=" margin-left: -9.5rem;">Rellama</h1>
+          <h1 class="header text-uppercase rellama-res" style=" margin-left: -9.5rem;">PURPOSE</h1>
         </div> 
       </div>
       </div>
@@ -59,24 +50,149 @@
     </div>
   </div>
 </div>
+</section>
 
-  d-flex flex-col justify-content-start -->
-  <div class="container2 min-h-90 min-w-90  ms-10;">
-    <div class="row">
-      <div class=" col-7" style=" text-align: justify; width: 45%; margin-right: 5%; margin-left: 65px;">
-        <h1 class="cont2-res" style="color: var(--text-orange);">About Me</h1>
-        <p class="res">I am a student at Bicol University Polangui studying Bachelor of Science in Information Technology.
-          In the bustling halls of Bicol University Polangui, nestled amidst the verdant landscapes of Albay, stands a determined student, diligently pursuing a Bachelor of Science in Information Technology (BSIT). With a fervent passion for technology and a hunger for knowledge, this student navigates through the complexities of algorithms, programming languages, and networking concepts with unwavering dedication. Their commitment to excellence is evident in every line of code written and every problem solved, as they strive to harness the power of information technology to shape a brighter future. <br> <br>
-          In the classrooms and labs of Bicol University Polangui, they are not just a student but a beacon of inspiration, embodying the spirit of innovation and resilience that defines the university's ethos. With each passing day, they inch closer to their aspirations, ready to make their mark in the ever-evolving world of IT, fueled by the guidance of their professors and the support of their peers. As they walk the corridors of learning, they carry with them the promise of limitless possibilities and the determination to conquer new frontiers in the realm of technology.
-        </p>
+<!-- page2  -->
+<section class="Info" id="info">
+<div class="body2">
+<div class="container2">
+  <div class="content1">
+    <h1 style="font-family: Krylon; font-size: 68; color: #D64D13;">Jeremy O. Rellama</h1>
+          <p style="text-align: justify; font-size: 16a;">
+            Hello there! I'm Jeremy Rellama, currently pursuing my Bachelor of Science in Information Technology (BSIT) at Bicol University Polangui. Originally hailing from Camagong, Oas, Albay, I'm deeply passionate about all things related to technology and computer science. Whether it's coding, software development, or exploring the latest tech trends, I'm always eager to dive in and learn more. Outside of academics, you'll often find me tinkering with computers, gaming. I'm excited to connect with others who share my interests and to embark on this journey of learning and growth together!
+            </p>
+      </div>
+      <div class="content2"> <img class="imghover" src="img/Jeremy.jpg" alt="" style="width: 558px; height: 558px; border-radius: 50%;"></div>
     </div>
-    <div class="p-2 col-5 res-img">
-      <img src="jeremypic.jpg" class=" rounded img-h img-res img-size" alt="">
-    </div>
-  </div>  
+</div>
   </div>
+</div>
+</section>
+
+<!-- page3  -->
+<section class="About" id="about">
+<div class="body3">
+  <div class="container3">
+    <div class="container">
+      <div class="content">
+        <h1 style="margin-bottom: 14px; font-family: Krylon; font-size: 46px; color: #ED7D31;  margin-top: 20px;">ABOUT ME</h1>
+        <p style="text-align: justify !important; font-size: 16px;">I am a student at Bicol University Polangui studying Bachelor of Science in Information Technology.
+          In the bustling halls of Bicol University Polangui, nestled amidst the verdant landscapes of Albay, stands a determined student, diligently pursuing a Bachelor of Science in Information Technology (BSIT). With a fervent passion for technology and a hunger for knowledge, this student navigates through the complexities of algorithms, programming languages, and networking concepts with unwavering dedication. Their commitment to excellence is evident in every line of code written and every problem solved, as they strive to harness the power of information technology to shape a brighter future.<br><br>
+          
+          In the classrooms and labs of Bicol University Polangui, they are not just a student but a beacon of inspiration, embodying the spirit of innovation and resilience that defines the university's ethos. With each passing day, they inch closer to their aspirations, ready to make their mark in the ever-evolving world of IT, fueled by the guidance of their professors and the support of their peers. As they walk the corridors of learning, they carry with them the promise of limitless possibilities and the determination to conquer new frontiers in the realm of technology.</p>
+      </div>
+      <div class="content2">
+        <h1 style="margin-bottom: 14px; font-family: Krylon; font-size: 46px; color: #ED7D31;">LEARNINGS</h1>
+        <p style="text-align: justify !important; font-size: 16px;">In my journey pursuing a Bachelor of Science in Information Technology (BSIT), I've gained invaluable insights that extend far beyond coding and technical know-how. One of the most profound lessons I've learned is the importance of adaptability. Technology evolves rapidly, and what may be cutting-edge today could be obsolete tomorrow. Being adaptable means not just mastering current tools and languages, but also cultivating a mindset that embraces change and eagerly seeks out new skills and knowledge. Another significant lesson is the power of collaboration. In the field of IT, teamwork is often essential to tackle complex problems and deliver innovative solutions. Through group projects and discussions, I've discovered the immense value in leveraging diverse perspectives and pooling expertise to achieve common goals. Additionally, I've come to understand the critical role of continuous learning. Whether it's staying updated on emerging technologies or honing soft skills like communication and leadership, the IT landscape demands lifelong learning. </p>
+      </div>
+      <div  class="content3">
+        <h1 style="margin-bottom: 14px; font-family: Krylon; font-size: 46px; color: #ED7D31;">EDUCATION</h1>
+        <div class="wrappergrid">
+        <div class="educgrid1">
+          <h1>ELEMENTARY</h1>
+          <p>Camagong, Elementary School</p>
+        </div>
+        <div class="educgrid2">
+          <h1>HIGH-SCHOOL</h1>
+          <p>Oas Polythecnic School</p>
+        </div>
+        <div class="educgrid3">
+          <h1>SENIOR HIGH-SCHOOL</h1>
+          <p>Oas Polythecnic School</p>
+        </div>
+        <div class="educgrid4">
+          <h1>COLLEGE</h1>
+          <p>Bicol University Polangui(BSIT)</p>
+        </div>
+      </div>
+      <div class="content4">
+        <h1 style="margin-bottom: 14px; font-family: Krylon; font-size: 46px; color: #ED7D31;">MY MOTTO</h1>
+        <p>"Embrace challenges, pursue growth, and always strive to make a positive impact."</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- page4  -->
+<section class="Works" id="works">
+<div class="body4">
+<div style="margin-top: 20px;">
+  <div class="header">
+    <h1>WORKS</h1>
+  </div>
+  <div class="container4">
+  <div class="grid-1" style="background-image: url(img/Works/draw.png);"></div>
+  <div class="grid-2" style="background-image: url(img/Works/BRUTALIST\ 2.png);">2</div>
+  <div class="grid-3" style="background-image: url(img/Works/One\ ok\ Rock.jpg);">3</div>
+  <div class="grid-4" style="background-image: url(img/Works/1.png);">4</div>
+  <div class="grid-5" style="background-image: url(img/Works/it\ was\ time\ to\ move\ on\ copy.png);" >5</div>
+  <div class="grid-6" style="background-image: url(img/Works/campaign\ period\ ends\ 3.png);" >6</div>
+  <div class="grid-7" style="background-image: url(img/Works/minor\ awards\ 1.png);">7</div>
+  <div class="grid-8" style="background-image: url(img/Works/Skyward\ Serenity.png);" >8</div>
+  <div class="grid-9" style="background-image: url(img/Works/Na/1.png);">9</div>
+  <div class="grid-10" style="background-image: url(img/Works/Na/3.png);">10</div>
+  <div class="grid-11" style="background-image: url(img/Works/PhotoCard.jpg);" >11</div> 
+  <div class="grid-12" style="background-image: url(img/Works/Na/4.png);" >11</div> 
+   <div class="grid-13" style="background-image: url(img/Works/ChessTarp/1.png);" >11</div>
+   <div class="grid-14" style="background-image: url(img/Works/Pubmat.png);" >11</div>
+   <div class="grid-15" style="background-image: url(img/Works/the\ night\ market\ poster.png);" >11</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- page5  -->
+
+<section class="Contacts" id="contacts">
+<div class="body5">
+  <div class="container5">
+    <div class="grid1">
+      <h1  style="margin-bottom: 14px; font-family: Krylon; color: #ED7D31;">GET IN TOUCH</h1>
+      <h4>Instagram</h4>
+      <p>_jeemmm</p>
+      <h4>Facebook</h4>
+      <p>Jeremy Rellama</p>
+      <h4>Telegram</h4>
+      <p>Jrmie</p>
+      <h4>Phone Number</h4>
+      <p>0916430647</p>
+      <h4>Email</h4>
+      <p>jeremyrellama17@gmail.com</p>
+    </div>
+    <div class="grid2" style="background-image: url(img/museum-of-new-zealand-te-papa-tongarewa-qte593Gwt6k-unsplash.jpg);">
+
+    </div>
+  </div>
+
+<div>
+</div>
+</section>
+
+
+
+<!-- footer -->
+
+<!-- <footer>
+  <div class="footercontainer">
+    <div class="footergrid1">
+      <img class="logofooter" src="img/logo.png" alt="logo">
+    </div>
+    <div class="footergrid2">
+      <h1 style="margin-top: 20px; margin-bottom: 10px;">Get in touch</h1>
+
+    <div class="footergrid3">3</div>
+    <div class="footergrid4">4</div>
+  </div>
+</footer>  -->
+
+<script src="script.js"></script>
+</body>
 
   <script defer src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
   <script defer src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+  
+
 </main>
-</body>
+
