@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
 
   console.log(scrolled);
 
-  if (scrolled >= 1290.4000244140625 && scrolled < 2204.800048828125) {
+  if (scrolled >= 1290.4000244140625 && scrolled < 2526.39990234375) {
       changeColor(true);
   } else {
       changeColor(false);
