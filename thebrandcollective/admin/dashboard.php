@@ -248,7 +248,7 @@ th {
 
         <?php
         if ($result->num_rows > 0) {
-            // Output data of each row
+            
             while($row = $result->fetch_assoc()) {
                 echo "<div class='card'>";
                 echo "<h3>" . $row["product"] . "</h3>";
@@ -311,14 +311,14 @@ th {
               $sales_last_year = $sales_last_year_row['sales_last_year'] ?? 0;
           }
 
-          //table with current date
+        
           $current_date = date('Y-m-d H:i:s',);
           $insert_sales_query = "INSERT INTO sales (sales_today, sales_yesterday, sales_this_year, sales_last_year, date) VALUES ($sales_today, $sales_yesterday, $sales_this_year, $sales_last_year, '$current_date')";
           if (!mysqli_query($conn, $insert_sales_query)) {
               echo "Error: " . mysqli_error($conn) . "<br>";
           }
 
-          // Inventory
+  
           $inventory_report_query = "SELECT product_name, stocks, stocks_history FROM products";
           $inventory_report_result = mysqli_query($conn, $inventory_report_query);
           if (!$inventory_report_result) {
